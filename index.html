@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap" rel="stylesheet">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Product preview card component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .normal{
+      font-family: 'Montserrat', sans-serif;
+      font-size: 14px;
+      color: hsl(228, 12%, 48%);
+    }
+    .title{
+      font-family: 'Fraunces', serif;
+    }
+
+    .box1{
+      position: absolute;
+      width: 650px;
+      height: 500px;
+      border-radius: 10px;
+      background-color: hsl(0, 0%, 100%);
+
+      box-shadow: 0 0 10px hsla(0,0%,0%,10%);
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+    .box2{
+      position: absolute;
+      width: 380px;
+      height: 650px;
+      border-radius: 10px;
+      background-color: hsl(0, 0%, 100%);
+
+      box-shadow: 0 0 10px hsla(0,0%,0%,10%);
+
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);
+    }
+
+    .shop{
+      position: relative;
+      border: none;
+      cursor: pointer;
+      transition-duration: 0.4s;
+      text-align: center;
+      width: 250px;
+      height: 50px;
+      margin-left: 360px;
+      margin-top: 30px;
+      border-radius: 10px;
+    }
+    .shop2{
+      position: relative;
+      border: none;
+      cursor: pointer;
+      transition-duration: 0.4s;
+      text-align: center;
+      width: 320px;
+      height: 50px;
+      left: 30px;
+      top: 307px;
+      border-radius: 10px;
+    }
+
+    .button1{
+      background-color: hsl(158, 36%, 37%);
+      color: hsl(0, 0%, 100%);
+    }
+    .button1:hover{
+      background-color: hsl(212, 21%, 14%);
+      color: hsl(0, 0%, 100%);
+    }
+    .button2{
+      background-color: hsl(158, 36%, 37%);
+      color: hsl(0, 0%, 100%);
+    }
+    .button2:hover{
+      background-color: hsl(212, 21%, 14%);
+      color: hsl(0, 0%, 100%);
+    }
+
+    .icon{
+      position: relative;
+      top: 0.2em;
+      left: -0.1em;
+    }
+
+  @media screen and (max-width: 600px) {
+    .view{
+        display:none;
+    }
+  }
+  @media screen and (min-width: 601px) {
+    .view2{
+      display: none;
+    }
+  }
+
+  </style>
+</head>
+<body style="background-color: hsl(30, 38%, 92%);">
+  <div class="box1 view">
+    <img src="images/image-product-desktop.jpg" alt="Perfume" style="width:325px;height:500px;border-top-left-radius: 10px;border-bottom-left-radius: 10px;">
+    
+    <p class="normal" style="margin-left: 360px;margin-top: -470px;font-weight: 500;letter-spacing: 6px;">PERFUME</p>
+    
+    <h1 class="title" style="margin-left: 360px;">Gabrielle<br> Essence Eau<br> De Parfum</h1>
+    
+    <p class="normal" style="margin-left: 360px;line-height: 1.7;">A floral, solar and voluptuous<br> interpretation composed by<br> Oliver Polge, Perfumer-Creator<br> for the house of CHANEL.</p>
+  
+    <h1 class="title" style="margin-left: 360px;margin-top: 40px;color: hsl(158, 36%, 37%);">$149.99</h1>
+    <p class="normal" style="margin-left: 510px;margin-top: -48px;"><strike>$169.99</strike></p>
+  
+    <button class="shop button1 normal" style="font-weight: 700;"><img src="images/icon-cart.svg" alt="Cart" class="icon"></img> Add to Cart</button>
+  </div>
+
+  <div class="box2 view2">
+    <img src="images/image-product-mobile.jpg" alt="Perfume" style="height: 40%;width: 100%;border-top-left-radius: 10px;border-top-right-radius: 10px;">
+    
+    <button class="shop2 button2 normal" style="font-weight: 700;"><img src="images/icon-cart.svg" alt="Cart" class="icon"></img> Add to Cart</button>
+  
+    <p class="normal" style="margin-left:35px;margin-top:-30px;font-weight: 500;letter-spacing: 6px;">PERFUME</p>
+  
+    <h1 class="title" style="margin-left:35px;margin-top:-5px;line-height:1.0;">Gabrielle Essence<br> Eau De Parfum</h1>
+  
+    <p class="normal" style="margin-left:35px;margin-top:-5px;line-height:1.7;">A floral, solar and voluptuous<br> interpretation composed by Oliver <br>Polge, Perfumer-Creator for the house of <br>CHANEL.</p>
+  
+    <h1 class="title" style="margin-left:35px;margin-top:30px;color: hsl(158, 36%, 37%);">$149.99</h1>
+    <p class="normal" style="margin-left:180px;margin-top:-50px;"><strike>$169.99</strike></p>
+  </div>
+</body>
+</html>
